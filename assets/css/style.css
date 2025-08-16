@@ -168,7 +168,6 @@ p {
   }
 }
 
-/*  TABLET */
 @media (min-width: 769px) and (max-width: 1024px) {
   .contentTitle {
     position: absolute;
@@ -251,7 +250,6 @@ p {
   background-color: white;
   color: black;
 }
-/* BOX AHORRO  simulador*/
 
 .sectionAhorro {
   width: 100%;
@@ -295,7 +293,6 @@ p {
   }
 }
 
-/* RESPONSIVE TABLET */
 @media (min-width: 769px) and (max-width: 1024px) {
   .boxAhorro {
     display: flex;
@@ -311,8 +308,6 @@ p {
     z-index: 99;
   }
 }
-
-/* BOX CONTENT 2 BENEFICIOS Y NOVEDADES */
 
 .box-content-2 {
   display: flex;
@@ -346,9 +341,6 @@ p {
     object-fit: cover;
   }
 }
-/* RESPONSIVE TABLET */
-
-/* ENCUENTRA SERVICIOS */
 
 .encuentraServicios {
   background-color: #f67903;
@@ -382,13 +374,9 @@ p {
   display: block;
 }
 
-/* BLOG */
-
 .contentBlog {
   text-align: center;
 }
-
-/* SECTION HAZTE CLIENTE */
 
 .contentCliente {
   background-color: #1e5099;
@@ -426,7 +414,6 @@ p {
   width: 100%;
 }
 
-/* TABLET */
 @media (max-width: 1024px) and (min-width: 769px) {
   .contentCliente {
     display: flex;
@@ -460,7 +447,6 @@ p {
     box-sizing: border-box;
   }
 }
-/* ACORDEON NECESITAS Ayuda */
 
 @media (max-width: 768px) {
   .acordeon-cuerpo .btn-primary {
@@ -556,8 +542,6 @@ p {
   border-bottom: 8px solid #f67903;
 }
 
-/* DESCARGA LA APP */
-
 .box-content-4 {
   position: relative;
   display: flex;
@@ -641,7 +625,6 @@ p {
   }
 }
 
-/* TABLET */
 @media (max-width: 1024px) and (min-width: 769px) {
   .box-content-4 {
     height: 30rem;
@@ -671,7 +654,6 @@ p {
   }
 }
 
-/* DESKTOP */
 @media (min-width: 1025px) {
   .box-content-4 {
     flex-direction: row;
@@ -699,7 +681,6 @@ p {
   }
 }
 
-/*  TABLET */
 @media (max-width: 1024px) and (min-width: 769px) {
   .box-content-4 {
     height: 30rem;
@@ -741,8 +722,6 @@ p {
   opacity: 0.5;
 }
 
-/* LOGOS ALIADOS */
-
 .contentLogos {
   padding: 80px 64px;
   height: auto;
@@ -777,7 +756,6 @@ p {
   }
 }
 
-/* TABLET */
 @media (max-width: 1024px) and (min-width: 769px) {
   .logosAliados {
     display: flex;
@@ -794,8 +772,6 @@ p {
     height: auto;
   }
 }
-
-/* FOOOTER */
 
 .footer {
   display: flex;
@@ -939,7 +915,6 @@ p {
   }
 }
 
-/* FORMULARIO */
 .offcanvas {
   position: fixed;
   top: 0;
