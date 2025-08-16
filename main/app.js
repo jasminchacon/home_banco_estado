@@ -6,41 +6,33 @@ for (i = 0; i < acordeon.length; i++) {
   });
 }
 
-//formulario
-// Seleccionar elementos
 const btnBanca = document.getElementById("btnBanca");
 const offcanvas = document.getElementById("offcanvas");
 const closeBtn = document.getElementById("closeBtn");
 
-// Abrir el offcanvas al hacer clic en el botón
 btnBanca.addEventListener("click", function () {
-  offcanvas.style.width = "400px"; // El ancho del offcanvas
+  offcanvas.style.width = "400px";
 });
 
-// Cerrar el offcanvas al hacer clic en la "X"
 closeBtn.addEventListener("click", function () {
-  offcanvas.style.width = "0"; // Ocultar el offcanvas
+  offcanvas.style.width = "0";
 });
 
-// Cerrar el offcanvas si el usuario hace clic fuera de él
 window.addEventListener("click", function (event) {
   if (event.target === offcanvas) {
-    offcanvas.style.width = "0"; // Ocultar el offcanvas
+    offcanvas.style.width = "0";
   }
 });
 
 document.getElementById("username").addEventListener("input", function (event) {
-  //regula que no se agreguen caracteres especiales no deseados
-  let rut = event.target.value.replace(/[^0-9kK]/g, ""); // Elimina cualquier carácter no numérico o 'k'
-  //verifica si el rut tiene entre 8 o 9 caracteres
+  let rut = event.target.value.replace(/[^0-9kK]/g, "");
   if (rut.length >= 8 && rut.length <= 9) {
     if (rut.length === 9) {
-      rut = rut.slice(0, 8) + "-" + rut.slice(8); //inserta el guion o la letra entre
-      // los primeros 8 caracteres
+      rut = rut.slice(0, 8) + "-" + rut.slice(8);
     }
   } else if (rut.length > 9) {
-    rut = rut.slice(0, 9); //solo permite 9 caracteres
+    rut = rut.slice(0, 9);
   }
 
-  event.target.value = rut; //actuliza el valor del input con el rut formateado
+  event.target.value = rut;
 });
